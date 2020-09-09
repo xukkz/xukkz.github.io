@@ -1,17 +1,35 @@
-header h1 {
-  text-align: center;
+header {
   color: aqua;
   font-family: "Roboto", sans-serif;
-  padding: 8px;
-  border: 0px;
+  padding: 12px;
   background-color: salmon;
+  position: sticky;
+  top: 0;
+}
+header > h1 {
+  text-align: left;
+}
+body {
+  background-image: url(https://puu.sh/GoYw9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body > #article1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-align: left;
 }
 
 footer {
   text-align: center;
   color: aqua;
   font-family: "Roboto", sans-serif;
-  padding: 8px;
-  border: 0px;
+  padding: 12px;
   background-color: salmon;
+  bottom: 0;
+}
+
+footer > table > tr {
+  text-align: center;
 }
