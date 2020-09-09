@@ -1,3 +1,8 @@
 h1 {
+  text-align: center;
   color: aqua;
+  font-family: "Roboto", sans-serif;
+  padding: 8px;
+  border: 0px;
+  background-color: black;
 }
