@@ -16,40 +16,91 @@ body {
   background-size: auto;*/
 }
 .gradient {
-  background-image: radial-gradient(
+  background: radial-gradient(
     ellipse at top,
     rgba(255, 197, 4, 0.5) 0%,
     rgba(255, 0, 0, 0.5) 100%
-  );
-  background-image: radial-gradient(
-    ellipse at bottom,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(0, 0, 0, 0.5) 100%
   );
 }
 
 .header {
   position: sticky;
   top: 0;
-  color: aqua;
+  color: black;
   background: white;
   padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: white;
+}
+a:hover {
+  color: grey;
 }
 .body {
   padding: 10px;
   padding-bottom: 60px; /* Height of the footer */
 }
 .footer {
+  display: flex;
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 60px; /* Height of the footer */
   background: black;
   color: aqua;
+  justify-content: center;
+  align-items: center;
 }
-#paragraph {
+.item {
+  flex-basis: auto;
+}
+.flexShrink1 {
+  flex-shrink: 1;
+}
+.flexShrink2 {
+  flex-shrink: 2;
+}
+.flexShrink3 {
+  flex-shrink: 3;
+}
+.flexShrink4 {
+  flex-shrink: 4;
+}
+.flexShrink5 {
+  flex-shrink: 5;
+}
+.flexGrow1 {
+  flex-grow: 1;
+}
+.flexGrow2 {
+  flex-grow: 2;
+}
+.flexGrow3 {
+  flex-grow: 3;
+}
+.flexGrow4 {
+  flex-grow: 4;
+}
+.flexGrow5 {
+  flex-grow: 5;
+}
+.swag {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  flex-flow: row wrap;
+}
+.box {
   border: 5px;
   border: solid;
+  padding: 20px;
+  margin: 10px;
+  max-width: 20%;
 }
 .offset {
   padding-left: 15px;
@@ -59,4 +110,11 @@ body {
   position: absolute;
   right: 50px;
   padding-left: 50px;
+}
+#placeholder {
+  text-shadow: 1px 1px 1px #000, 3px 3px 5px grey;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  bottom: 20%;
 }
